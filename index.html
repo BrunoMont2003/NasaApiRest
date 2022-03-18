@@ -23,6 +23,42 @@
           class="w-24"
         />
       </div>
+      <div class="p-5">
+        <select
+          name="rover"
+          id="cboRover"
+          class="px-5 py-2 rounded border text-xl bg-transparent border-white text-white mr-5"
+        >
+          <option value="curiosity">Curiosity</option>
+          <option value="opportunity">Opportunity</option>
+          <option value="spirit">Spirit</option>
+        </select>
+        <select
+          name="camera"
+          id="cboCamera"
+          class="px-5 py-2 rounded border text-xl bg-transparent border-white text-white"
+        >
+          <option disabled selected value="">Seleccione Camara</option>
+          <option value="FHAZ">FHAZ</option>
+          <option value="RHAZ">RHAZ</option>
+          <option value="MAST">MAST</option>
+          <option value="CHEMCAM">CHEMCAM</option>
+          <option value="MAHLI">MAHLI</option>
+          <option value="MARDI">MARDI</option>
+          <option value="NAVCAM">NAVCAM</option>
+          <option value="PANCAM">PANCAM</option>
+          <option value="MINITES">MINITES</option>
+        </select>
+      </div>
+      <div class="p-5">
+        <h2 class="text-2xl text-white">
+          Rover:
+          <span id="rover-name"> Spirit </span>
+        </h2>
+        <span class="text-slate-200"
+          >Landing date: <span id="landing-date"></span>
+        </span>
+      </div>
       <div
         class="mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         id="galeria"
@@ -31,3 +67,4 @@
     <script src="index.js" type="module"></script>
   </body>
 </html>
+
